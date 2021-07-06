@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>JSP Tags</title>
+</h:head>
+<h:body>
+
+	<b><h:outputText value="JSF Tags!" /></b>
+	<br></br>
+	<br></br>
+	<hr />
+	<h3>h:outputText Tag</h3>
+
+	<b><h:outputText value="h:outputText" /></b>
+	<br></br>
+	<hr />
+	<h3>h:inputText Tag</h3>
+	<h:inputText value="Hello JSF" />
+	<br></br>
+	<hr />
+	<h3>h:inputSecret Tag</h3>
+	<input type="password" name="" value="password" />
+	<br></br>
+	<hr />
+	<h3>h:inputTextarea Tag</h3>
+	<h:inputTextarea row="10" col="10"
+		value="I am Software Enginner in Mehran University" readonly="true" />
+	<br></br>
+	<hr />
+	<h3>h: form Tag</h3>
+	<h:form id="user-form">
+		<h:outputLabel for="username">User Name</h:outputLabel>
+		<h:inputText id="username" value="#{user.name}" required="true"
+			requiredMessage="Username is required" />
+		<br />
+		<h:commandButton id="submit-button" value="Submit"
+			action="response.xhtml" />
+	</h:form>
+	<hr />
+	<h3>h:commandButton Tag</h3>
+	<h:commandButton id="submit-button" value="Submit" />
+	<hr />
+	<h3>h:commandLink Tag</h3>
+	<h:commandLink value="Page 1" action="page1" name="Page 1" />
+	<hr />
+	<h3>h:selectBooleanCheckBox</h3>
+	<h:selectBooleanCheckbox value="Remember Me" id="chkRememberMe" />
+	<hr />
+	<h3>h:selectManyCheckBox</h3>
+	<h:selectManyCheckbox value="#{userData.data}">
+		<f:selectItem itemValue="1" itemLabel="Item 1" />
+		<f:selectItem itemValue="2" itemLabel="Item 2" />
+	</h:selectManyCheckbox>
+	<hr />
+	<h3>h:selectOneRadio</h3>
+	<h:selectOneRadio value="#{userData.data}">
+		<f:selectItem itemValue="1" itemLabel="Male" />
+		<f:selectItem itemValue="2" itemLabel="Female" />
+	</h:selectOneRadio>
+	<hr />
+	<h3>h:selectOneListbox</h3>
+	<h:selectOneListbox value="#{userData.data}">
+		<f:selectItem itemValue="1" itemLabel="Item 1" />
+		<f:selectItem itemValue="2" itemLabel="Item 2" />
+	</h:selectOneListbox>
+	<hr />
+	<h3>h:selectManyListbox</h3>
+	<h:selectManyListbox value="#{userData.data}">
+		<f:selectItem itemValue="1" itemLabel="Item 1" />
+		<f:selectItem itemValue="2" itemLabel="Item 2" />
+		<f:selectItem itemValue="1" itemLabel="Item 3" />
+		<f:selectItem itemValue="2" itemLabel="Item 4" />
+	</h:selectManyListbox>
+	<hr />
+	<h3>h:graphicImage</h3>
+	<h:graphicImage  
+   value = "https://admission.com.pk/wp-content/uploads/2020/04/Mehren.jpg"/> <hr />
+   
+</h:body>
+</html>

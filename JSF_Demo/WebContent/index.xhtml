@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Student Form</title>
+</h:head>
+<h:body>
+	<div
+		style="width: 100%; font-size: 36px; line-height: 48px; background-color: navy; color: white">Student
+		Form</div><br></br>
+		<h:form>
+			Student Name : <h:inputText name="studentName" value="#{studentMB.studentName}"></h:inputText><br></br><br></br>
+			Roll Number : <h:inputText name="rollNumber" value="#{studentMB.rollNumber}"></h:inputText><br></br><br></br>
+			Email : <h:inputText name="email" value="#{studentMB.email}"></h:inputText><br></br><br></br>
+			Age : <h:inputText name="age" value="#{studentMB.age}"></h:inputText><br></br><br></br>
+			Address : <h:inputText name="address" value="#{studentMB.address}"></h:inputText><br></br><br></br>
+			<h:commandButton  value="Add" action="#{studentMB.addStudent()}"></h:commandButton>
+		</h:form>
+
+</h:body>
+</html>
